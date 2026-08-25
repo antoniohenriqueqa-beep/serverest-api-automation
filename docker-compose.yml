@@ -1,0 +1,11 @@
+# Sobe uma instancia local da ServeRest para executar a suite sem
+# depender do ambiente publico compartilhado.
+# Uso:  docker compose up -d  &&  mvn test -Denv=local
+services:
+  serverest:
+    image: paulogoncalvesbh/serverest:latest
+    container_name: serverest-local
+    ports:
+      - "3000:3000"
+    environment:
+      - nodeEnv=production
