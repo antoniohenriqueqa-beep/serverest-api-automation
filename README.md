@@ -43,7 +43,9 @@ O alvo padrão é a instância local. O ambiente público exige escolha explíci
 mvn test -Denv=hml
 ```
 
-A razão é que a `serverest.dev` é mantida pela comunidade, tem dados de terceiros e indisponibilidade eventual — rodar contra ela por padrão tornaria a execução não reprodutível e dispararia tráfego que ninguém pediu. O pipeline usa `-Denv=hml` de propósito, para validar o serviço realmente publicado.
+A razão é que a `serverest.dev` é mantida gratuitamente pela comunidade, tem dados de terceiros e indisponibilidade eventual — rodar contra ela por padrão tornaria a execução não reprodutível e dispararia tráfego que ninguém pediu.
+
+**O pipeline também não usa o ambiente público.** Sobe a própria instância em container a cada execução. Além da questão de etiqueta, o motivo que mais pesa é de confiabilidade: um build vermelho por dado de terceiro ou indisponibilidade não indica regressão nenhuma, e suíte que falha sem motivo real deixa de ser levada a sério — na prática, desliga a verificação.
 
 Execução por tag:
 

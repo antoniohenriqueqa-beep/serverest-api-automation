@@ -20,6 +20,26 @@ jobs:
   testes-api:
     runs-on: ubuntu-latest
 
+    # A suite roda contra uma instancia propria, iniciada do zero a cada
+    # execucao, e nao contra a serverest.dev publica.
+    #
+    # Duas razoes. A primeira e de etiqueta: a serverest.dev e mantida
+    # gratuitamente pela comunidade, e disparar a suite inteira a cada
+    # push e a cada pull request e consumir infraestrutura de terceiro
+    # sem necessidade.
+    #
+    # A segunda e de confiabilidade, e importa mais: o ambiente publico
+    # tem dados de outras pessoas e indisponibilidade eventual. Um build
+    # vermelho por causa disso nao indica regressao nenhuma, e suite que
+    # falha sem motivo real deixa de ser levada a serio -- na pratica,
+    # desliga a verificacao. Com container, a falha volta a significar
+    # que alguma coisa quebrou.
+    services:
+      serverest:
+        image: paulogoncalvesbh/serverest:latest
+        ports:
+          - 3000:3000
+
     steps:
       - name: Checkout do repositório
         uses: actions/checkout@v4
@@ -31,8 +51,20 @@ jobs:
           distribution: 'temurin'
           cache: maven
 
+      - name: Aguardar a API responder
+        run: |
+          for i in $(seq 1 30); do
+            if curl -sf http://localhost:3000/usuarios > /dev/null; then
+              echo "API disponível"
+              exit 0
+            fi
+            sleep 2
+          done
+          echo "API não respondeu no tempo esperado"
+          exit 1
+
       - name: Executar a suíte de testes
-        run: mvn -B test -Denv=hml
+        run: mvn -B test -Denv=local
 
       # O relatorio e gerado pelo allure-maven, ja declarado no pom, em
       # vez de por uma action de terceiro. A anterior
