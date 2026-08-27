@@ -1,12 +1,12 @@
 # Automação de Testes de API — ServeRest
 
-![CI](https://github.com/SEU-USUARIO/serverest-api-automation/actions/workflows/ci.yml/badge.svg)
+![CI](https://github.com/antoniohenriqueqa-beep/serverest-api-automation/actions/workflows/ci.yml/badge.svg)
 
 Framework de testes automatizados para a API REST [ServeRest](https://serverest.dev), construído com Java, RestAssured e Cucumber, com execução contínua no GitHub Actions e relatório Allure publicado no GitHub Pages.
 
 O objetivo do projeto é demonstrar a estruturação de uma suíte de testes de API mantível: separação de responsabilidades, massa de dados dinâmica, validação de contrato por JSON Schema e integração ao pipeline.
 
-**Relatório da última execução:** https://SEU-USUARIO.github.io/serverest-api-automation
+**Relatório da última execução:** https://antoniohenriqueqa-beep.github.io/serverest-api-automation
 
 ---
 
@@ -31,7 +31,7 @@ O objetivo do projeto é demonstrar a estruturação de uma suíte de testes de 
 Pré-requisitos: JDK 17 e Maven 3.8+.
 
 ```bash
-git clone https://github.com/SEU-USUARIO/serverest-api-automation.git
+git clone https://github.com/antoniohenriqueqa-beep/serverest-api-automation.git
 cd serverest-api-automation
 mvn test
 ```
