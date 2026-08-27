@@ -108,6 +108,10 @@
                     <systemPropertyVariables>
                         <env>${env}</env>
                         <cucumber.filter.tags>${tags}</cucumber.filter.tags>
+                        <!-- Sem isto o AllureCucumber7Jvm grava em ./allure-results,
+                             na raiz do projeto: fora de target/, fora do padrao que o
+                             allure-maven le, e num caminho que o CI nao publica. -->
+                        <allure.results.directory>${project.build.directory}/allure-results</allure.results.directory>
                     </systemPropertyVariables>
                 </configuration>
                 <dependencies>

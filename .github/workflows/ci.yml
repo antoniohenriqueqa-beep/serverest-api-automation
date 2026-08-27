@@ -9,6 +9,13 @@ on:
     - cron: '0 9 * * 1'
   workflow_dispatch:
 
+# Necessario para o passo de publicacao empurrar o branch gh-pages.
+# Repositorios criados a partir de 2023 recebem GITHUB_TOKEN somente
+# leitura por padrao, e sem esta declaracao o push do relatorio falha
+# com 403.
+permissions:
+  contents: write
+
 jobs:
   testes-api:
     runs-on: ubuntu-latest
@@ -27,6 +34,18 @@ jobs:
       - name: Executar a suíte de testes
         run: mvn -B test -Denv=hml
 
+      # O relatorio e gerado pelo allure-maven, ja declarado no pom, em
+      # vez de por uma action de terceiro. A anterior
+      # (simple-elf/allure-report-action) e uma action Docker cuja
+      # imagem base, openjdk:8-jre-alpine, foi removida do Docker Hub
+      # quando as imagens oficiais openjdk foram descontinuadas. Como o
+      # GitHub constroi actions Docker na fase de setup, a falha
+      # derrubava o job inteiro antes do checkout -- os testes nem
+      # chegavam a rodar.
+      - name: Gerar relatório Allure
+        if: always()
+        run: mvn -B allure:report
+
       - name: Publicar resultados como artefato
         if: always()
         uses: actions/upload-artifact@v4
@@ -35,17 +54,10 @@ jobs:
           path: target/allure-results
           retention-days: 15
 
-      - name: Gerar relatório Allure
-        if: always()
-        uses: simple-elf/allure-report-action@v1.7
-        with:
-          allure_results: target/allure-results
-          allure_history: allure-history
-
       - name: Publicar relatório no GitHub Pages
         if: always() && github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_branch: gh-pages
-          publish_dir: allure-history
+          publish_dir: target/site/allure-maven-plugin
