@@ -139,7 +139,12 @@
             <id>default-params</id>
             <activation><activeByDefault>true</activeByDefault></activation>
             <properties>
-                <env>hml</env>
+                <!-- Alvo padrao e a instancia local (docker compose up -d).
+                     O surefire sempre injeta esta propriedade, entao e ela,
+                     e nao o default do ConfigManager, que decide o alvo de
+                     um "mvn test" sem parametro. O ambiente publico exige
+                     -Denv=hml explicito. -->
+                <env>local</env>
                 <tags>not @wip</tags>
             </properties>
         </profile>

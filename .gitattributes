@@ -1,0 +1,6 @@
+# Normaliza a quebra de linha no repositorio.
+# Sem isso, cada commit vindo de Windows aparece como arquivo inteiro
+# reescrito no diff, e a revisao fica inutilizavel.
+* text=auto eol=lf
+*.png binary
+*.jar binary

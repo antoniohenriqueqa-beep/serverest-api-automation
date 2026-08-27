@@ -33,21 +33,23 @@ Pré-requisitos: JDK 17 e Maven 3.8+.
 ```bash
 git clone https://github.com/antoniohenriqueqa-beep/serverest-api-automation.git
 cd serverest-api-automation
+docker compose up -d
 mvn test
 ```
+
+O alvo padrão é a instância local. O ambiente público exige escolha explícita:
+
+```bash
+mvn test -Denv=hml
+```
+
+A razão é que a `serverest.dev` é mantida pela comunidade, tem dados de terceiros e indisponibilidade eventual — rodar contra ela por padrão tornaria a execução não reprodutível e dispararia tráfego que ninguém pediu. O pipeline usa `-Denv=hml` de propósito, para validar o serviço realmente publicado.
 
 Execução por tag:
 
 ```bash
 mvn test -Dtags="@smoke"
 mvn test -Dtags="@negativo and @seguranca"
-```
-
-Execução contra uma instância local da API (via Docker):
-
-```bash
-docker compose up -d
-mvn test -Denv=local
 ```
 
 Relatório local:
@@ -106,10 +108,10 @@ src/test/
 |---|---|---|
 | `/usuarios` | 7 | Contrato da listagem, cadastro válido, e-mail duplicado, campos obrigatórios, consulta inexistente |
 | `/login` | 3 | Token válido, senha incorreta, e-mail não cadastrado |
-| `/produtos` | 4 | Cadastro autorizado, bloqueio sem token, bloqueio para não administrador, nome duplicado |
+| `/produtos` | 7 | Contrato da listagem e do detalhe, recuperação por id, consulta inexistente, cadastro autorizado, bloqueio sem token, bloqueio para não administrador, nome duplicado |
 | `/carrinhos` | 8 | Contrato da listagem, registro válido, limite de um carrinho por usuário, bloqueio sem token, produto inexistente, baixa e reposição de estoque |
 
-Total: **22 cenários**.
+Total: **25 cenários**, 114 steps.
 
 ---
 

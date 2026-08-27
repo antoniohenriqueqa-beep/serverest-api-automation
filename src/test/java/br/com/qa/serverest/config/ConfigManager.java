@@ -6,16 +6,24 @@ import java.util.Properties;
 
 /**
  * Carrega a configuracao do ambiente alvo.
- * O ambiente e definido pela system property "env" (default: hml),
- * permitindo executar contra o serverest.dev publico ou contra uma
- * instancia local em Docker sem alterar codigo.
+ * O ambiente e definido pela system property "env", permitindo executar
+ * contra uma instancia local ou contra o serverest.dev publico sem
+ * alterar codigo.
+ *
+ * O default e "local", e nao "hml", de proposito: quem clona o projeto e
+ * roda "mvn test" sem parametro nao deve disparar contra a instancia
+ * publica mantida pela comunidade sem ter escolhido isso. Alem disso o
+ * ambiente publico tem dados de terceiros e indisponibilidade eventual,
+ * o que torna a execucao nao reprodutivel. O alvo publico continua
+ * disponivel de forma explicita, com "-Denv=hml", que e o que o
+ * pipeline usa.
  */
 public final class ConfigManager {
 
     private static final Properties PROPERTIES = new Properties();
 
     static {
-        String env = System.getProperty("env", "hml");
+        String env = System.getProperty("env", "local");
         String file = String.format("config/%s.properties", env);
 
         try (InputStream input = ConfigManager.class.getClassLoader().getResourceAsStream(file)) {
