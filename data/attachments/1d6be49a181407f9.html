@@ -1,0 +1,31 @@
+<div>POST to http://localhost:3000/produtos</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;nome&quot;: &quot;Mediocre Paper Clock 17887718349919420&quot;,
+    &quot;preco&quot;: 572,
+    &quot;descricao&quot;: &quot;Ut veniam itaque beatae nostrum at nam.&quot;,
+    &quot;quantidade&quot;: 80
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InFhLjE3ODg3NzE4MzQ4OTc4Mjk3QHRlc3RlLmNvbSIsInBhc3N3b3JkIjoibjg2NGJlcDRiNiIsImlhdCI6MTc4ODc3MTgzNCwiZXhwIjoxNzg4NzcyNDM0fQ.y1UzEz-Yatmt84VJsf4Fi338TK7V39UvuMDPzDm3zB4</div>
+        <div>Accept: application/json, application/javascript, text/javascript, text/json</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://localhost:3000/produtos&#39; -H &#39;Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InFhLjE3ODg3NzE4MzQ4OTc4Mjk3QHRlc3RlLmNvbSIsInBhc3N3b3JkIjoibjg2NGJlcDRiNiIsImlhdCI6MTc4ODc3MTgzNCwiZXhwIjoxNzg4NzcyNDM0fQ.y1UzEz-Yatmt84VJsf4Fi338TK7V39UvuMDPzDm3zB4&#39; -H &#39;Accept: application/json, application/javascript, text/javascript, text/json&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;nome&quot;: &quot;Mediocre Paper Clock 17887718349919420&quot;,
+    &quot;preco&quot;: 572,
+    &quot;descricao&quot;: &quot;Ut veniam itaque beatae nostrum at nam.&quot;,
+    &quot;quantidade&quot;: 80
+}&#39;
+</div>

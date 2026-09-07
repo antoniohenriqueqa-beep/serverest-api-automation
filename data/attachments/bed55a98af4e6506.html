@@ -1,0 +1,31 @@
+<div>POST to http://localhost:3000/produtos</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;nome&quot;: &quot;Fantastic Wool Plate 17887718355717266&quot;,
+    &quot;preco&quot;: 3316,
+    &quot;descricao&quot;: &quot;Possimus nemo repellendus consequatur est voluptatem sed.&quot;,
+    &quot;quantidade&quot;: 10
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InFhLjE3ODg3NzE4MzU1Mjc3MDk2QHRlc3RlLmNvbSIsInBhc3N3b3JkIjoiazZhNTRqcG00MXMiLCJpYXQiOjE3ODg3NzE4MzUsImV4cCI6MTc4ODc3MjQzNX0.11cH8zNjEYOD0zsi9XSCSw_rLP0QRE9wiJkVpSv-ITo</div>
+        <div>Accept: application/json, application/javascript, text/javascript, text/json</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://localhost:3000/produtos&#39; -H &#39;Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InFhLjE3ODg3NzE4MzU1Mjc3MDk2QHRlc3RlLmNvbSIsInBhc3N3b3JkIjoiazZhNTRqcG00MXMiLCJpYXQiOjE3ODg3NzE4MzUsImV4cCI6MTc4ODc3MjQzNX0.11cH8zNjEYOD0zsi9XSCSw_rLP0QRE9wiJkVpSv-ITo&#39; -H &#39;Accept: application/json, application/javascript, text/javascript, text/json&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;nome&quot;: &quot;Fantastic Wool Plate 17887718355717266&quot;,
+    &quot;preco&quot;: 3316,
+    &quot;descricao&quot;: &quot;Possimus nemo repellendus consequatur est voluptatem sed.&quot;,
+    &quot;quantidade&quot;: 10
+}&#39;
+</div>
