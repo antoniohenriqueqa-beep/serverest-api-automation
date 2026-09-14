@@ -1,76 +1,76 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"passed","Mon Sep 07 09:03:56 UTC 2026","Mon Sep 07 09:03:56 UTC 2026","89","","Cadastro e consulta de produtos","","Cadastro de produto com nome já existente deve ser bloqueado","","Cadastro de produto com nome já existente deve ser bloqueado","  Como consumidor da API ServeRest
-  Quero cadastrar e consultar produtos na loja
-  Para garantir que o contrato, a autorização e a unicidade são respeitados"
-"passed","Mon Sep 07 09:03:56 UTC 2026","Mon Sep 07 09:03:56 UTC 2026","21","","Cadastro e consulta de usuários","","Consulta de usuário inexistente deve retornar mensagem de negócio","","Consulta de usuário inexistente deve retornar mensagem de negócio","  Como consumidor da API ServeRest
-  Quero cadastrar e consultar usuários
-  Para garantir que o contrato e as regras de negócio do recurso estão íntegros"
-"passed","Mon Sep 07 09:03:55 UTC 2026","Mon Sep 07 09:03:55 UTC 2026","89","","Carrinho de compras","","Conclusão sem carrinho registrado deve retornar mensagem de negócio","","Conclusão sem carrinho registrado deve retornar mensagem de negócio","  Como consumidor da API ServeRest
-  Quero registrar, concluir e cancelar carrinhos
-  Para garantir que as regras de unicidade e de baixa de estoque são respeitadas"
-"passed","Mon Sep 07 09:03:56 UTC 2026","Mon Sep 07 09:03:56 UTC 2026","27","","Cadastro e consulta de produtos","","Cadastro de produto sem token deve ser bloqueado","","Cadastro de produto sem token deve ser bloqueado","  Como consumidor da API ServeRest
-  Quero cadastrar e consultar produtos na loja
-  Para garantir que o contrato, a autorização e a unicidade são respeitados"
-"passed","Mon Sep 07 09:03:56 UTC 2026","Mon Sep 07 09:03:56 UTC 2026","30","","Cadastro e consulta de usuários","","Listagem de usuários deve respeitar o contrato publicado","","Listagem de usuários deve respeitar o contrato publicado","  Como consumidor da API ServeRest
-  Quero cadastrar e consultar usuários
-  Para garantir que o contrato e as regras de negócio do recurso estão íntegros"
-"passed","Mon Sep 07 09:03:56 UTC 2026","Mon Sep 07 09:03:56 UTC 2026","63","","Cadastro e consulta de produtos","","Cadastro de produto por usuário não administrador deve ser bloqueado","","Cadastro de produto por usuário não administrador deve ser bloqueado","  Como consumidor da API ServeRest
-  Quero cadastrar e consultar produtos na loja
-  Para garantir que o contrato, a autorização e a unicidade são respeitados"
-"passed","Mon Sep 07 09:03:55 UTC 2026","Mon Sep 07 09:03:55 UTC 2026","127","","Carrinho de compras","","Registro de carrinho sem token deve ser bloqueado","","Registro de carrinho sem token deve ser bloqueado","  Como consumidor da API ServeRest
-  Quero registrar, concluir e cancelar carrinhos
-  Para garantir que as regras de unicidade e de baixa de estoque são respeitadas"
-"passed","Mon Sep 07 09:03:54 UTC 2026","Mon Sep 07 09:03:54 UTC 2026","65","","Autenticação de usuários","","Login com e-mail não cadastrado deve ser rejeitado","","Login com e-mail não cadastrado deve ser rejeitado","  Como consumidor da API ServeRest
+"passed","Mon Sep 14 09:05:03 UTC 2026","Mon Sep 14 09:05:03 UTC 2026","39","","Autenticação de usuários","","Login com e-mail não cadastrado deve ser rejeitado","","Login com e-mail não cadastrado deve ser rejeitado","  Como consumidor da API ServeRest
   Quero autenticar usuários cadastrados
   Para obter o token necessário às operações protegidas"
-"passed","Mon Sep 07 09:03:56 UTC 2026","Mon Sep 07 09:03:56 UTC 2026","27","","Cadastro e consulta de usuários","","Cadastro deve ser bloqueado sem o campo obrigatório nome","","Cadastro deve ser bloqueado sem o campo obrigatório nome","  Como consumidor da API ServeRest
-  Quero cadastrar e consultar usuários
-  Para garantir que o contrato e as regras de negócio do recurso estão íntegros"
-"passed","Mon Sep 07 09:03:55 UTC 2026","Mon Sep 07 09:03:55 UTC 2026","203","","Carrinho de compras","","Conclusão da compra deve dar baixa no estoque do produto","","Conclusão da compra deve dar baixa no estoque do produto","  Como consumidor da API ServeRest
-  Quero registrar, concluir e cancelar carrinhos
-  Para garantir que as regras de unicidade e de baixa de estoque são respeitadas"
-"passed","Mon Sep 07 09:03:56 UTC 2026","Mon Sep 07 09:03:56 UTC 2026","58","","Cadastro e consulta de usuários","","Cadastro deve ser bloqueado quando o e-mail já está em uso","","Cadastro deve ser bloqueado quando o e-mail já está em uso","  Como consumidor da API ServeRest
-  Quero cadastrar e consultar usuários
-  Para garantir que o contrato e as regras de negócio do recurso estão íntegros"
-"passed","Mon Sep 07 09:03:56 UTC 2026","Mon Sep 07 09:03:56 UTC 2026","31","","Cadastro e consulta de produtos","","Consulta de produto inexistente deve retornar mensagem de negócio","","Consulta de produto inexistente deve retornar mensagem de negócio","  Como consumidor da API ServeRest
+"passed","Mon Sep 14 09:05:05 UTC 2026","Mon Sep 14 09:05:05 UTC 2026","76","","Cadastro e consulta de produtos","","Administrador autenticado deve cadastrar produto","","Administrador autenticado deve cadastrar produto","  Como consumidor da API ServeRest
   Quero cadastrar e consultar produtos na loja
   Para garantir que o contrato, a autorização e a unicidade são respeitados"
-"passed","Mon Sep 07 09:03:55 UTC 2026","Mon Sep 07 09:03:55 UTC 2026","161","","Carrinho de compras","","Cancelamento da compra deve devolver a quantidade ao estoque","","Cancelamento da compra deve devolver a quantidade ao estoque","  Como consumidor da API ServeRest
-  Quero registrar, concluir e cancelar carrinhos
-  Para garantir que as regras de unicidade e de baixa de estoque são respeitadas"
-"passed","Mon Sep 07 09:03:56 UTC 2026","Mon Sep 07 09:03:56 UTC 2026","21","","Cadastro e consulta de usuários","","Cadastro deve ser bloqueado sem o campo obrigatório password","","Cadastro deve ser bloqueado sem o campo obrigatório password","  Como consumidor da API ServeRest
-  Quero cadastrar e consultar usuários
-  Para garantir que o contrato e as regras de negócio do recurso estão íntegros"
-"passed","Mon Sep 07 09:03:54 UTC 2026","Mon Sep 07 09:03:55 UTC 2026","223","","Carrinho de compras","","Usuário autenticado deve registrar carrinho com produto disponível","","Usuário autenticado deve registrar carrinho com produto disponível","  Como consumidor da API ServeRest
-  Quero registrar, concluir e cancelar carrinhos
-  Para garantir que as regras de unicidade e de baixa de estoque são respeitadas"
-"passed","Mon Sep 07 09:03:55 UTC 2026","Mon Sep 07 09:03:55 UTC 2026","171","","Carrinho de compras","","Não deve ser permitido mais de um carrinho por usuário","","Não deve ser permitido mais de um carrinho por usuário","  Como consumidor da API ServeRest
-  Quero registrar, concluir e cancelar carrinhos
-  Para garantir que as regras de unicidade e de baixa de estoque são respeitadas"
-"passed","Mon Sep 07 09:03:54 UTC 2026","Mon Sep 07 09:03:54 UTC 2026","398","","Carrinho de compras","","Listagem de carrinhos deve respeitar o contrato publicado","","Listagem de carrinhos deve respeitar o contrato publicado","  Como consumidor da API ServeRest
-  Quero registrar, concluir e cancelar carrinhos
-  Para garantir que as regras de unicidade e de baixa de estoque são respeitadas"
-"passed","Mon Sep 07 09:03:56 UTC 2026","Mon Sep 07 09:03:56 UTC 2026","125","","Cadastro e consulta de produtos","","Produto cadastrado deve ser recuperável pelo seu identificador","","Produto cadastrado deve ser recuperável pelo seu identificador","  Como consumidor da API ServeRest
+"passed","Mon Sep 14 09:05:05 UTC 2026","Mon Sep 14 09:05:05 UTC 2026","25","","Cadastro e consulta de produtos","","Cadastro de produto sem token deve ser bloqueado","","Cadastro de produto sem token deve ser bloqueado","  Como consumidor da API ServeRest
   Quero cadastrar e consultar produtos na loja
   Para garantir que o contrato, a autorização e a unicidade são respeitados"
-"passed","Mon Sep 07 09:03:55 UTC 2026","Mon Sep 07 09:03:55 UTC 2026","79","","Carrinho de compras","","Registro de carrinho com produto inexistente deve ser bloqueado","","Registro de carrinho com produto inexistente deve ser bloqueado","  Como consumidor da API ServeRest
+"passed","Mon Sep 14 09:05:05 UTC 2026","Mon Sep 14 09:05:05 UTC 2026","40","","Cadastro e consulta de usuários","","Cadastro deve ser bloqueado sem o campo obrigatório nome","","Cadastro deve ser bloqueado sem o campo obrigatório nome","  Como consumidor da API ServeRest
+  Quero cadastrar e consultar usuários
+  Para garantir que o contrato e as regras de negócio do recurso estão íntegros"
+"passed","Mon Sep 14 09:05:04 UTC 2026","Mon Sep 14 09:05:04 UTC 2026","183","","Carrinho de compras","","Não deve ser permitido mais de um carrinho por usuário","","Não deve ser permitido mais de um carrinho por usuário","  Como consumidor da API ServeRest
   Quero registrar, concluir e cancelar carrinhos
   Para garantir que as regras de unicidade e de baixa de estoque são respeitadas"
-"passed","Mon Sep 07 09:03:54 UTC 2026","Mon Sep 07 09:03:54 UTC 2026","112","","Autenticação de usuários","","Login com senha incorreta deve ser rejeitado","","Login com senha incorreta deve ser rejeitado","  Como consumidor da API ServeRest
+"passed","Mon Sep 14 09:05:04 UTC 2026","Mon Sep 14 09:05:04 UTC 2026","97","","Carrinho de compras","","Registro de carrinho com produto inexistente deve ser bloqueado","","Registro de carrinho com produto inexistente deve ser bloqueado","  Como consumidor da API ServeRest
+  Quero registrar, concluir e cancelar carrinhos
+  Para garantir que as regras de unicidade e de baixa de estoque são respeitadas"
+"passed","Mon Sep 14 09:05:04 UTC 2026","Mon Sep 14 09:05:04 UTC 2026","162","","Carrinho de compras","","Cancelamento da compra deve devolver a quantidade ao estoque","","Cancelamento da compra deve devolver a quantidade ao estoque","  Como consumidor da API ServeRest
+  Quero registrar, concluir e cancelar carrinhos
+  Para garantir que as regras de unicidade e de baixa de estoque são respeitadas"
+"passed","Mon Sep 14 09:05:05 UTC 2026","Mon Sep 14 09:05:05 UTC 2026","24","","Cadastro e consulta de usuários","","Consulta de usuário inexistente deve retornar mensagem de negócio","","Consulta de usuário inexistente deve retornar mensagem de negócio","  Como consumidor da API ServeRest
+  Quero cadastrar e consultar usuários
+  Para garantir que o contrato e as regras de negócio do recurso estão íntegros"
+"passed","Mon Sep 14 09:05:05 UTC 2026","Mon Sep 14 09:05:05 UTC 2026","101","","Cadastro e consulta de produtos","","Cadastro de produto com nome já existente deve ser bloqueado","","Cadastro de produto com nome já existente deve ser bloqueado","  Como consumidor da API ServeRest
+  Quero cadastrar e consultar produtos na loja
+  Para garantir que o contrato, a autorização e a unicidade são respeitados"
+"passed","Mon Sep 14 09:05:05 UTC 2026","Mon Sep 14 09:05:05 UTC 2026","32","","Cadastro e consulta de produtos","","Listagem de produtos deve respeitar o contrato publicado","","Listagem de produtos deve respeitar o contrato publicado","  Como consumidor da API ServeRest
+  Quero cadastrar e consultar produtos na loja
+  Para garantir que o contrato, a autorização e a unicidade são respeitados"
+"passed","Mon Sep 14 09:05:05 UTC 2026","Mon Sep 14 09:05:05 UTC 2026","27","","Cadastro e consulta de usuários","","Cadastro deve ser bloqueado sem o campo obrigatório email","","Cadastro deve ser bloqueado sem o campo obrigatório email","  Como consumidor da API ServeRest
+  Quero cadastrar e consultar usuários
+  Para garantir que o contrato e as regras de negócio do recurso estão íntegros"
+"passed","Mon Sep 14 09:05:05 UTC 2026","Mon Sep 14 09:05:05 UTC 2026","113","","Cadastro e consulta de produtos","","Produto cadastrado deve ser recuperável pelo seu identificador","","Produto cadastrado deve ser recuperável pelo seu identificador","  Como consumidor da API ServeRest
+  Quero cadastrar e consultar produtos na loja
+  Para garantir que o contrato, a autorização e a unicidade são respeitados"
+"passed","Mon Sep 14 09:05:03 UTC 2026","Mon Sep 14 09:05:03 UTC 2026","407","","Carrinho de compras","","Listagem de carrinhos deve respeitar o contrato publicado","","Listagem de carrinhos deve respeitar o contrato publicado","  Como consumidor da API ServeRest
+  Quero registrar, concluir e cancelar carrinhos
+  Para garantir que as regras de unicidade e de baixa de estoque são respeitadas"
+"passed","Mon Sep 14 09:05:04 UTC 2026","Mon Sep 14 09:05:05 UTC 2026","69","","Carrinho de compras","","Conclusão sem carrinho registrado deve retornar mensagem de negócio","","Conclusão sem carrinho registrado deve retornar mensagem de negócio","  Como consumidor da API ServeRest
+  Quero registrar, concluir e cancelar carrinhos
+  Para garantir que as regras de unicidade e de baixa de estoque são respeitadas"
+"passed","Mon Sep 14 09:05:04 UTC 2026","Mon Sep 14 09:05:04 UTC 2026","183","","Carrinho de compras","","Conclusão da compra deve dar baixa no estoque do produto","","Conclusão da compra deve dar baixa no estoque do produto","  Como consumidor da API ServeRest
+  Quero registrar, concluir e cancelar carrinhos
+  Para garantir que as regras de unicidade e de baixa de estoque são respeitadas"
+"passed","Mon Sep 14 09:05:03 UTC 2026","Mon Sep 14 09:05:03 UTC 2026","124","","Autenticação de usuários","","Login com senha incorreta deve ser rejeitado","","Login com senha incorreta deve ser rejeitado","  Como consumidor da API ServeRest
   Quero autenticar usuários cadastrados
   Para obter o token necessário às operações protegidas"
-"passed","Mon Sep 07 09:03:50 UTC 2026","Mon Sep 07 09:03:54 UTC 2026","3866","","Autenticação de usuários","","Login com credenciais válidas deve retornar token","","Login com credenciais válidas deve retornar token","  Como consumidor da API ServeRest
-  Quero autenticar usuários cadastrados
-  Para obter o token necessário às operações protegidas"
-"passed","Mon Sep 07 09:03:56 UTC 2026","Mon Sep 07 09:03:56 UTC 2026","36","","Cadastro e consulta de produtos","","Listagem de produtos deve respeitar o contrato publicado","","Listagem de produtos deve respeitar o contrato publicado","  Como consumidor da API ServeRest
+"passed","Mon Sep 14 09:05:03 UTC 2026","Mon Sep 14 09:05:04 UTC 2026","207","","Carrinho de compras","","Usuário autenticado deve registrar carrinho com produto disponível","","Usuário autenticado deve registrar carrinho com produto disponível","  Como consumidor da API ServeRest
+  Quero registrar, concluir e cancelar carrinhos
+  Para garantir que as regras de unicidade e de baixa de estoque são respeitadas"
+"passed","Mon Sep 14 09:05:04 UTC 2026","Mon Sep 14 09:05:04 UTC 2026","160","","Carrinho de compras","","Registro de carrinho sem token deve ser bloqueado","","Registro de carrinho sem token deve ser bloqueado","  Como consumidor da API ServeRest
+  Quero registrar, concluir e cancelar carrinhos
+  Para garantir que as regras de unicidade e de baixa de estoque são respeitadas"
+"passed","Mon Sep 14 09:05:05 UTC 2026","Mon Sep 14 09:05:05 UTC 2026","31","","Cadastro e consulta de produtos","","Consulta de produto inexistente deve retornar mensagem de negócio","","Consulta de produto inexistente deve retornar mensagem de negócio","  Como consumidor da API ServeRest
   Quero cadastrar e consultar produtos na loja
   Para garantir que o contrato, a autorização e a unicidade são respeitados"
-"passed","Mon Sep 07 09:03:56 UTC 2026","Mon Sep 07 09:03:56 UTC 2026","72","","Cadastro e consulta de produtos","","Administrador autenticado deve cadastrar produto","","Administrador autenticado deve cadastrar produto","  Como consumidor da API ServeRest
-  Quero cadastrar e consultar produtos na loja
-  Para garantir que o contrato, a autorização e a unicidade são respeitados"
-"passed","Mon Sep 07 09:03:56 UTC 2026","Mon Sep 07 09:03:56 UTC 2026","29","","Cadastro e consulta de usuários","","Cadastro deve ser bloqueado sem o campo obrigatório email","","Cadastro deve ser bloqueado sem o campo obrigatório email","  Como consumidor da API ServeRest
+"passed","Mon Sep 14 09:05:05 UTC 2026","Mon Sep 14 09:05:05 UTC 2026","40","","Cadastro e consulta de usuários","","Cadastro de usuário com dados válidos","","Cadastro de usuário com dados válidos","  Como consumidor da API ServeRest
   Quero cadastrar e consultar usuários
   Para garantir que o contrato e as regras de negócio do recurso estão íntegros"
-"passed","Mon Sep 07 09:03:56 UTC 2026","Mon Sep 07 09:03:56 UTC 2026","44","","Cadastro e consulta de usuários","","Cadastro de usuário com dados válidos","","Cadastro de usuário com dados válidos","  Como consumidor da API ServeRest
+"passed","Mon Sep 14 09:05:05 UTC 2026","Mon Sep 14 09:05:05 UTC 2026","88","","Cadastro e consulta de produtos","","Cadastro de produto por usuário não administrador deve ser bloqueado","","Cadastro de produto por usuário não administrador deve ser bloqueado","  Como consumidor da API ServeRest
+  Quero cadastrar e consultar produtos na loja
+  Para garantir que o contrato, a autorização e a unicidade são respeitados"
+"passed","Mon Sep 14 09:04:59 UTC 2026","Mon Sep 14 09:05:03 UTC 2026","3656","","Autenticação de usuários","","Login com credenciais válidas deve retornar token","","Login com credenciais válidas deve retornar token","  Como consumidor da API ServeRest
+  Quero autenticar usuários cadastrados
+  Para obter o token necessário às operações protegidas"
+"passed","Mon Sep 14 09:05:05 UTC 2026","Mon Sep 14 09:05:05 UTC 2026","31","","Cadastro e consulta de usuários","","Cadastro deve ser bloqueado sem o campo obrigatório password","","Cadastro deve ser bloqueado sem o campo obrigatório password","  Como consumidor da API ServeRest
+  Quero cadastrar e consultar usuários
+  Para garantir que o contrato e as regras de negócio do recurso estão íntegros"
+"passed","Mon Sep 14 09:05:05 UTC 2026","Mon Sep 14 09:05:05 UTC 2026","58","","Cadastro e consulta de usuários","","Cadastro deve ser bloqueado quando o e-mail já está em uso","","Cadastro deve ser bloqueado quando o e-mail já está em uso","  Como consumidor da API ServeRest
+  Quero cadastrar e consultar usuários
+  Para garantir que o contrato e as regras de negócio do recurso estão íntegros"
+"passed","Mon Sep 14 09:05:05 UTC 2026","Mon Sep 14 09:05:05 UTC 2026","32","","Cadastro e consulta de usuários","","Listagem de usuários deve respeitar o contrato publicado","","Listagem de usuários deve respeitar o contrato publicado","  Como consumidor da API ServeRest
   Quero cadastrar e consultar usuários
   Para garantir que o contrato e as regras de negócio do recurso estão íntegros"
