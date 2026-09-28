@@ -1,0 +1,31 @@
+<div>POST to http://localhost:3000/produtos</div>
+
+<h4>Body</h4>
+<div>
+    <pre class="preformated-text">
+{
+    &quot;nome&quot;: &quot;Incredible Wooden Keyboard 17905863272744425&quot;,
+    &quot;preco&quot;: 3812,
+    &quot;descricao&quot;: &quot;Voluptas quibusdam officia quo natus dolore vero fugiat.&quot;,
+    &quot;quantidade&quot;: 58
+}    </pre>
+</div>
+
+<h4>Headers</h4>
+<div>
+        <div>Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InFhLjE3OTA1ODYzMjcyMzI5Mjc5QHRlc3RlLmNvbSIsInBhc3N3b3JkIjoiNWc2azhkMGk0dXMiLCJpYXQiOjE3OTA1ODYzMjcsImV4cCI6MTc5MDU4NjkyN30.aOVCFhRQ2mHs3-ZE3NeR0C64h8fjF2EhJxM5vs7XkGw</div>
+        <div>Accept: application/json, application/javascript, text/javascript, text/json</div>
+        <div>Content-Type: application/json</div>
+</div>
+
+
+
+<h4>Curl</h4>
+<div>
+curl -v -X POST &#39;http://localhost:3000/produtos&#39; -H &#39;Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InFhLjE3OTA1ODYzMjcyMzI5Mjc5QHRlc3RlLmNvbSIsInBhc3N3b3JkIjoiNWc2azhkMGk0dXMiLCJpYXQiOjE3OTA1ODYzMjcsImV4cCI6MTc5MDU4NjkyN30.aOVCFhRQ2mHs3-ZE3NeR0C64h8fjF2EhJxM5vs7XkGw&#39; -H &#39;Accept: application/json, application/javascript, text/javascript, text/json&#39; -H &#39;Content-Type: application/json&#39; -d &#39;{
+    &quot;nome&quot;: &quot;Incredible Wooden Keyboard 17905863272744425&quot;,
+    &quot;preco&quot;: 3812,
+    &quot;descricao&quot;: &quot;Voluptas quibusdam officia quo natus dolore vero fugiat.&quot;,
+    &quot;quantidade&quot;: 58
+}&#39;
+</div>
